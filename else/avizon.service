@@ -1,0 +1,11 @@
+[Unit]
+Description=Avizon service
+
+[Service]
+WorkingDirectory=/var/www/avizon
+Environment=PYTHONPATH=/var/www/avizon
+ExecStart=/var/www/avizon/venv/bin/python3 uploader.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1 @@
+source /var/www/avizon/venv/bin/activate && python3 /var/www/avizon/menu.py && deactivate
